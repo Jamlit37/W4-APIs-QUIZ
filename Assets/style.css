@@ -2,6 +2,7 @@
   background-color: #dde5f0;
 }
 
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -104,6 +105,7 @@ hr {
   transition: transform 150ms;
 }
 
+/* Easier to see what selector you are hovered over */
 .questionLine:hover {
   opacity: 50%;
 }
@@ -128,7 +130,6 @@ hr {
   margin-bottom: 32px;
   padding: auto;
   width: 61%;
-
 }
 
 #question {
@@ -144,6 +145,7 @@ hr {
   border-radius: 0 0 16px 16px;
 }
 
+/* Media query to enable the timer to move under the header instead of covering it */
 @media (max-width: 998px) {
   .timer {
     position: inherit;

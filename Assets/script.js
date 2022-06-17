@@ -1,4 +1,5 @@
-  var begin = document.querySelector("#begin");
+ //Starting links to index.html sheet using query selectors
+ var begin = document.querySelector("#begin");
   var leader = document.querySelector("#leader");
   var card = document.querySelector("#multiChoice");
   var question = document.querySelector("#question");
@@ -18,6 +19,7 @@
   var scoreButton = document.querySelector("#scoreButton");
   var initialsBox = document.querySelector("#initialsBox");
   var submitButton = document.querySelector("#submitButton");
+  //All questions for one loop
   var questionBank = [
   {   
       question: "Which mammal is known to have the most powerful bite in the world?",
@@ -76,7 +78,7 @@
   }
 
 ];
-
+//Enabling score and timer decrease
 var timeRemain = questionBank.length * 10;
 var score = 0;
 var scoreList = [];
@@ -110,6 +112,7 @@ function displayQA() {
   }
 };
 
+// Function created to either give correct message or in the cvase of being wrong deducting 10 seconds
 function compareAnswer(event) {
   if (q >= questionBank.length) {
     gameOver();
@@ -129,6 +132,7 @@ function compareAnswer(event) {
   }
 };
 
+
 function getScore() {
   var storedScore = JSON.parse(localStorage.getItem("highScore"));
   if (storedScore !== null) {
@@ -140,6 +144,7 @@ function saveScore() {
   localStorage.setItem("highScore", JSON.stringify(scoreList));
 };
 
+// Functionality to hide and show what looks to be a new page 
 function gameOver() {
   scoreButton.innerHTML = score;
   scoreButton.style.display = "inline-block";
@@ -150,6 +155,7 @@ function gameOver() {
   leaderBoard();
 };
 
+// Leaderboard which is only able to show the top ten highscores
 function leaderBoard() {
   removeFromLeaderBoard();
   addToLeaderBoard();
@@ -215,6 +221,7 @@ submitButton.addEventListener("click", function (event) {
   scoreCard.classList.remove("hide");
 });
 
+// Functionality to hide and show what looks to be a new page 
 leader.addEventListener("click", function (event) {
   scoreCard.classList.remove("hide");
   leader.classList.add("hide");
@@ -226,6 +233,7 @@ backButton.addEventListener("click", function (event) {
   location.reload();
 });
 
+// Reset high score list
 clearButton.addEventListener("click", function (event) {
   scoreList = [];
   start.classList.add("hide");
