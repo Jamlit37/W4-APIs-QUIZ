@@ -9,7 +9,7 @@ Screenshots are as followed
 -
 https://user-images.githubusercontent.com/104121180/174213651-7fba290b-932f-4079-a020-a9b1c2653f91.PNG
 -
-(https://user-images.githubusercontent.com/104121180/174213841-e5746912-311f-4af9-8093-4fa5303907f3.PNG
+https://user-images.githubusercontent.com/104121180/174213841-e5746912-311f-4af9-8093-4fa5303907f3.PNG
 -
 https://user-images.githubusercontent.com/104121180/174213870-d7c1e870-930c-46ea-9050-15a0a9b548ba.PNG
 
