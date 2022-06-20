@@ -91,18 +91,17 @@ hr {
   font-size: 24px;
   background-color: #00b712;
   background-image: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
-  -webkit-border-radius: 16px;
+  -webkit-border-radius: 12px;
   text-decoration: none;
   font-weight: 700;
-  margin: 8px;
+  margin: 12px;
   padding: 8px;
 }
 
 .button:hover {
   cursor: pointer;
-  box-shadow: 0 8px 8px 0 rgb(48, 47, 47);
-  transform: translateY(1.6px);
-  transition: transform 150ms;
+  transform: rotate(360deg);
+  transform: scale(1.01);
 }
 
 /* Easier to see what selector you are hovered over */
